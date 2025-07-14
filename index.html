@@ -13,6 +13,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,62 +44,82 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <div class="container-xl">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/imagenes/gopro logo.png" alt="Logo GoPro">
+      <a href="index.html" class="logo">
+        <img src="assets/imagenes/gopro logo.png" alt="Logo GoPro" >
       </a>
+      <div class="logo-mobile">
+        <img src="assets/imagenes/gopro logo.png" alt="Logo GoPro">
+      </div>
 
+
+
+      <!-- Botón hamburguesa -->
+    <button class="hamburger" id="hamburger-btn">☰</button>
+
+      </button>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#inicio" class="active">Inicio</a></li>
-          <li><a href="#about">Características</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
           <li><a href="#services">Especificaciones</a></li>
           <li><a href="#portfolio">Sobre nosotros</a></li>
         </ul>
-        </nav>  
+        </nav>
     </div>
+    
+    
+    
   </header>
 
-  <main class="main">
+ 
 
     <main class="main">
 
       <!-- INICIO Section -->
+
       <section id="inicio" class="inicio">
+        <div class="barra-divisora-inicio"></div>
         <div class="contenedor-superpuesto">
-          <img src="assets/imagenes/imagen gopro inicio.png" class="hero-img" alt="GoPro">
-          <div class="texto-superpuesto">
-            <h1><strong>Saltá más alto, corré más <br> rápido, filmalo todo</strong></h1>
+          <img src="assets/imagenes/imagen gopro inicio.png" class="hero-img" alt="GoPro"data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="700">
+          <div class="texto-superpuesto" data-aos="custom-fade"
+          data-aos-duration="1000"
+          data-aos-delay="700">
+            <h1><strong>Saltá más alto, corré más  rápido, filmalo todo</strong></h1>
           </div>
         </div>
       </section>
 
     
       <!-- CARACTERÍSTICAS Section -->
-      <section id="caracteristicas" class="caracteristicas">
-        <div class="container">
+      <section id="caracteristicas" class="caracteristicas" >
+        <div class="container" data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="600">
           <div class="row text-center">
       
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3">
               <img src="assets/imagenes/icono camara.png" alt="Icono cámara" class="icono-caracteristica icono-camara">
               <h6>Definición y detalle óptimos</h6>
               <p>Grabaciones en 5.3K a 60 fps.</p>
             </div>
       
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3 ">
               <img src="assets/imagenes/icono horizon look.png" alt="Icono horizon lock" class="icono-caracteristica icono-horizon">
               <h6>Horizon Lock</h6>
               <p>Mantiene el horizonte perfectamente nivelado.</p>
             </div>
       
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3">
               <img src="assets/imagenes/icono estabilidad.png" alt="Icono estabilizador" class="icono-caracteristica icono-estabilidad">
               <h6>Estabilización de primera</h6>
               <p>Su tecnología HyperSmooth 6.0 logra una imagen siempre fluida.</p>
             </div>
       
-            <div class="col-md-3 mb-4">
+            <div class="col-md-3">
               <img src="assets/imagenes/icono montaje.png" alt="Icono montaje" class="icono-caracteristica icono-montaje">
               <h6>Montaje versátil</h6>
               <p>Se monta fácil en cientos de superficies y equipos.</p>
@@ -106,13 +129,29 @@
         </div>
       </section>
       
+      
 
-      <!-- SECCIÓN CON FONDO COMPLETO -->
+      <!-- SECCIÓN DEL LENTE GRANDE COMPLETO -->
       <section class="seccion-gopro">
-        <img src="assets/imagenes/imagenlente.png" alt="GoPro fondo" class="fondo-imagen-lente">
-        <div class="texto-encima">
-          <h2><br>Visión sin limites</br></h2>
-          <p>Su <strong>lente modular</strong> te permite reemplazarlo fácilmente por otros como el <strong>Max Lens Mod 2.0.</strong>Más ángulo, más control, más adrenalina.</p>
+        <div class="texto-encima" 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="400">
+        
+        <img src="assets/imagenes/imagenlente.png" alt="GoPro fondo" class="fondo-imagen-lente" 
+        data-aos="custom-fade"
+        data-aos-duration="2000"
+        data-aos-delay="700">
+
+        
+
+          <div class="titulo-lente">
+            <h2>Visión sin limites</h2>
+          </div>
+          <div class="texto-lente">
+            <p>Su <strong>lente modular</strong> te permite reemplazarlo fácilmente por otros como el <strong>Max Lens Mod 2.0.</strong>Más ángulo, más control, más adrenalina.</p>
+          </div>
+          
         </div>
       </section>
 
@@ -124,7 +163,9 @@
     <p>Algunas cosas importantes que tenés que saber de la GoPro HERO12 Black.</p>
   </div>
 
-  <div class="gopro-layout">
+  <div class="gopro-layout" data-aos="fade-up"
+  data-aos-duration="3000"
+  data-aos-delay="500">
     <!-- Columna izquierda -->
     <!-- Columna izquierda -->
     <div class="columna-iconos-izq">
@@ -141,7 +182,11 @@
     </div>
 
     <!-- Imagen central -->
-    <div class="columna-imagen">
+    <div class="columna-imagen" 
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-delay="400">
+
       <img src="assets/imagenes/goproespecificacionestecnicas.png" alt="GoPro HERO12">
     </div>
 
@@ -163,8 +208,11 @@
   <!-- SECCIÓN BANNER CON TEXTOS SUPERPUESTOS -->
 <section class="gopro-banner">
   <img src="assets/imagenes/Recurso 4.png" alt="Banner GoPro" class="banner-imagen">
-  
-  <div class="banner-textos">
+  <img src="assets/imagenes/fondonumerosmobile.png" alt="Banner-GoPro-mobile" class="banner-imagen-mobile">
+
+  <div class="banner-textos" data-aos="custom-fade"
+  data-aos-duration="1000"
+  data-aos-delay="400">
     <div class="texto-bloque">
       <h3>3</h3>
       <p>micrófonos</p>
@@ -194,7 +242,9 @@
     <p>Estos son sólo algunos de los deportes donde la GoPro HERO12 puede capturar tus momentos más emocionantes.</p>
   </div>
 
-  <div class="deportes-cards">
+  <div class="deportes-cards" data-aos="fade-up"
+  data-aos-duration="2000"
+  data-aos-delay="500">
     <!-- CARD 1 -->
     <div class="card-deporte">
       <div class="imagen-deporte">
@@ -246,20 +296,33 @@
   <img src="assets/imagenes/imagenseccionsola2.png" alt="GoPro oceano" class="fondo-imagen-oceano">
 </section>
 
+<!-- SECCIÓN IPHONE APLICACIONES -->
 <section class="aplicaciones">
-  <div class="contenedor-iphone">
+  <div class="contenedor-iphone" 
+  data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="400">
   <div class="iphone">
     <img src="assets/imagenes/imagenapp.png" alt="iphone" class="imagen-iphone">
   </div>
-  <div class="texto-iphone">
-    <h2> Grabá. Editá. Subí.</h2>
-    <p>Seleccioná tus mejores tomas, agregá ritmo y estilo, y compartilas al instante. Con <strong>Quik</strong>
+  <div class="contenedor-texto-iphone" data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="400">
+    <div class="titulo-iphones">
+      <h2> Grabá. Editá. Subí.</h2>
+    </div>
+    <div class="texto-iphone">
+      <p>Seleccioná tus mejores tomas, agregá ritmo y estilo, y compartilas al instante. Con <strong>Quik</strong><br>
       conviertí acción en contenido épico, en segundos y desde tu celular.</p>
+    </div>
+    
     <img src="assets/imagenes/botonapplestore.png" alt="botonapple" class="boton-apple">
     <img src="assets/imagenes/botonandroid.png" alt="botonplaystore" class="boton-playstore">
 
-  </div>
-</div>
+      </div>
+
+      
+    </div>
   </section>
 
     </main>
@@ -338,6 +401,24 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  const btn = document.getElementById('hamburger-btn');
+  const nav = document.getElementById('navmenu');
+
+  btn.addEventListener('click', () => {
+    nav.classList.toggle('show');
+
+    // Cambiar ícono ☰ ↔ ✖
+    btn.textContent = nav.classList.contains('show') ? '✖' : '☰';
+  });
+</script>
+
+</script>
+
 
 </body>
 
